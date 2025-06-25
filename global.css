@@ -3,9 +3,12 @@
 * {
     margin: 0;
     padding: 0;
-    overflow: auto;
+    box-sizing: border-box;
+    font-family: 'Chakra Petch', sans-serif;
 }
-
+body {
+  overflow-x: hidden; /* no horizontal scroll */
+}
 nav {
     height: 10vh;
     width: 100%;
@@ -55,7 +58,6 @@ nav a:visited {
     align-items: center;
     justify-content: center;
     color: white;
-    padding-top: 20vh;
 }
 
 footer {
@@ -63,7 +65,7 @@ footer {
     color: white;
 }
 
-#introduction{
+#introduction {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -74,6 +76,123 @@ footer {
     flex-wrap: wrap;
     overflow: auto;
 }
+
 h3 {
-    font-weight: 500;
+    font-weight: 400;
+}
+
+#result {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+#generatedPassword {
+    font-size: 1.5em;
+    font-family: 'Chakra Petch', sans-serif;
+    margin-bottom: 5%;
+}
+
+#copyBtn {
+    border-radius: 5px;
+    padding: 5px;
+    opacity: 0.8;
+}
+#copyBtn:hover {
+    opacity: 0.6;
+}
+#strength {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.2em;
+    padding-bottom: 20px;
+}
+
+.option {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.2em;
+    padding: 10px;
+}
+#slider {
+    padding-top: 20px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#generate-btn{
+    padding:0;
+    margin:0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#generate {
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    background-color: #38bcbf;
+    border-color: #38bcbf;
+    border-style: none;
+}
+#generate:hover {
+    opacity: 0.7;
+}
+/* STYLE THE SLIDER */
+#lengthSlider {
+    -webkit-appearance: none; /* Remove default */
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #00c6ff, #38bcbf);
+    outline: none;
+    transition: background 0.3s;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+
+/* Thumb (Handle) */
+#lengthSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid #38bcbf;;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#lengthSlider::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+
+#lengthSlider::-moz-range-thumb {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid #38bcbf;;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#lengthSlider::-moz-range-thumb:hover {
+    transform: scale(1.2);
+}
+
+/* Display value style */
+#lengthValue {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: 'Chakra Petch', sans-serif;
+    color: #38bcbf;
+    font-size: 1.5em;
 }

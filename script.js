@@ -51,7 +51,7 @@ function generatePassword() {
 
     const finalPassword = password.join("");
     resultDiv.innerHTML = `
-    Password: <span id="generatedPassword">${finalPassword}</span>
+    <span id="generatedPassword">${finalPassword}</span>
     <button id="copyBtn" onclick="copyPassword()">Copy Password</button>
 `;
 

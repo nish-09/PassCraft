@@ -28,14 +28,16 @@
             <div id="result"><button id="copyBtn" onclick="copyPassword()" style="display: none;">Copy Password</button></div>
             <div id="notification" style="margin-top: 10px;"></div>
             <div id="strength"></div>
-            <input type="checkbox" id="alphabets" checked> Alphabets
-            <input type="checkbox" id="numbers"> Numbers
-            <input type="checkbox" id="symbols"> Symbols
+            <label class="option"><input type="checkbox" id="alphabets" checked> Alphabets</label>
+<label class="option"><input type="checkbox" id="numbers"> Numbers</label>
+<label class="option"><input type="checkbox" id="symbols"> Symbols</label>
+
             <br>
-            <input type="range" id="lengthSlider" min="4" max="64" value="12">
+            <div id='slider'><input type="range" id="lengthSlider" min="4" max="64" value="12">
             <span id="lengthValue">12</span>
+        </div>
             <br>
-            <button onclick="generatePassword()">Generate</button>
+            <div id="generate-btn"><button onclick="generatePassword()" id="generate">Generate</button></div>
             
         </div>
     </div>
