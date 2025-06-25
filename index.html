@@ -20,13 +20,29 @@
             <h1>Generate a Strong, Secure password Instantly with passcraft</h1>
             </p>
             <p>
-            <h3>Use passcraft's online password generator to quickly create a powerful, random password — perfect for keeping your accounts safe and secure.</h3>
+            <h3>Use passcraft's online password generator to quickly create a powerful, random password — perfect for
+                keeping your accounts safe and secure.</h3>
             </p>
+        </div>
+        <div class="workspace">
+            <div id="result"><button id="copyBtn" onclick="copyPassword()" style="display: none;">Copy Password</button></div>
+            <div id="notification" style="margin-top: 10px;"></div>
+            <div id="strength"></div>
+            <input type="checkbox" id="alphabets" checked> Alphabets
+            <input type="checkbox" id="numbers"> Numbers
+            <input type="checkbox" id="symbols"> Symbols
+            <br>
+            <input type="range" id="lengthSlider" min="4" max="64" value="12">
+            <span id="lengthValue">12</span>
+            <br>
+            <button onclick="generatePassword()">Generate</button>
+            
         </div>
     </div>
     <footer>
         hi bro
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
