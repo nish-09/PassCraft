@@ -220,6 +220,7 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 40px;
 }
 
 .faq-container {
@@ -309,27 +310,40 @@ footer {
     background-color: black;
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     padding: 20px;
     flex-wrap: wrap;
     width: 100%;
 }
 
-.aboutus, .contact {
-    width: 45%;
+.footer-wrapper{
+    display: flex;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.aboutus,
+.contact {
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    padding: 10px;
 }
 
 footer h3 {
     margin-bottom: 10px;
     font-size: 1.2em;
 }
+
 .line {
     width: 2px;
     background-color: white;
-    margin: 0 10px;
+    margin: 0;
+    opacity: 0.2;
 }
 
 
@@ -377,4 +391,67 @@ footer h3 {
         font-size: 1em;
         padding: 8px 16px;
     }
+}
+
+.nishit,
+.darshika {
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact .line {
+    height: 2px;
+    width: 100%;
+    margin-left: 10px;
+    opacity: 0.2;
+}
+
+.copyright{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.copyright .line{
+    height: 2px;
+    width: 95vw;
+    margin: 10px;
+    opacity: 0.2;
+}
+
+#bottomline{
+    display: block;
+    height: 2px;
+    width: 95vw;
+    margin: 10px auto; 
+    background-color: white;
+    opacity: 0.2;
+}
+
+
+
+.logo-style{
+    color: #38bcbf;
+    padding: 0px 10px;
+}
+
+.logo-style:visited{
+    color: white;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: #38bcbf;
+}
+
+.copyright a:visited{
+    color: white;
+    text-decoration: underline;
 }
