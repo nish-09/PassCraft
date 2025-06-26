@@ -57,16 +57,20 @@ function generatePassword() {
 
     let strength = "";
     let bgColor = "";
+    let workspaceBG = "";
 
     if (length >= 4 && length <= 6) {
         strength = "🔴 Bad Password";
         bgColor = "red";
+        workspaceBG = "rgba(255, 0, 0, 0.61)";
     } else if (length >= 7 && length <= 10) {
         strength = "🟠 Weak Password";
         bgColor = "orange";
+        workspaceBG = "rgba(255, 165, 0, 0.61)";
     } else if (length > 10) {
         strength = "🟢 Strong Password";
         bgColor = "green";
+        workspaceBG = "rgba(0, 128, 0, 0.61)";
     }
 
     strengthDiv.innerText = strength;
@@ -75,6 +79,13 @@ function generatePassword() {
     resultDiv.style.padding = "10px";
     resultDiv.style.marginTop = "10px";
     resultDiv.style.borderRadius = "5px";
+    
+    const workspaceDiv = document.getElementById("workspace");
+if (workspaceDiv) {
+    workspaceDiv.style.backgroundColor = workspaceBG;
+    workspaceDiv.style.backdropFilter = "blur(10px)";
+    workspaceDiv.style.webkitBackdropFilter = "blur(10px)";
+}
 }
 function getRandomChar(str) {
     const index = Math.floor(Math.random() * str.length);
