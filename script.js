@@ -132,3 +132,10 @@ window.addEventListener("DOMContentLoaded", () => {
 
     generatePassword();
 });
+
+
+ document.querySelectorAll('.faq-question').forEach((question) => {
+        question.addEventListener('click', () => {
+            question.parentElement.classList.toggle('active');
+        });
+    });

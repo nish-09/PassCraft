@@ -9,6 +9,8 @@
 
 body {
     overflow-x: hidden;
+    min-height: 100vh;
+    background-color: rgb(29, 27, 27);
 }
 
 nav {
@@ -52,10 +54,11 @@ nav a:visited {
 
 .container {
     background-color: rgb(29, 27, 27);
-    height: 100vh;
+    height: auto;
     width: 100%;
     color: white;
-
+    min-height: 100vh;
+    padding-bottom: 100px;
 }
 
 footer {
@@ -219,9 +222,115 @@ h3 {
     justify-content: center;
 }
 
-.
+.faq-container {
+    margin-top: 50px;
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    font-family: 'Chakra Petch', sans-serif;
+    width: 90%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.faq-container h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #38bcbf;
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #555;
+    margin-bottom: 15px;
+}
+
+.faq-question {
+    font-size: 1.2em;
+    padding: 15px 10px;
+    cursor: pointer;
+    background-color: #292929;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #333;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 10px;
+    transition: all 0.3s ease;
+    font-size: 1em;
+    color: #ddd;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 300px;
+    padding: 10px;
+}
+
+.faq-question {
+    font-size: 1.2em;
+    padding: 15px 10px;
+    cursor: pointer;
+    background-color: #292929;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.faq-toggle-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4em;
+    color: #38bcbf;
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-toggle-icon {
+    content: "-";
+    transform: translateY(-50%) rotate(180deg);
+}
 
 
+
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.aboutus, .contact {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+.line {
+    width: 2px;
+    background-color: white;
+    margin: 0 10px;
+}
 
 
 @media screen and (max-width: 768px) {
@@ -268,37 +377,4 @@ h3 {
         font-size: 1em;
         padding: 8px 16px;
     }
-}
-
-footer {
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.aboutus {
-    height: auto;
-    width: 49vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.line {
-    height: auto;
-    width: 1px;
-    background-color: white;
-    border-color: white;
-}
-
-.contact {
-    height: auto;
-    width: 49vw;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.nishit {
-    display: flex;
 }

@@ -17,47 +17,125 @@
     <div class="container">
         <div class="wrapper">
             <div id="introduction">
-            <p>
-            <h1>Generate a Strong, Secure <br> password Instantly with passcraft</h1>
-            </p>
-            <p>
-            <h3>Looking for a fast and reliable way to create secure passwords? PassCraft’s Online Password Generator helps you generate strong, random passwords instantly — designed to protect your online accounts from hackers and cyber threats. With customizable options including alphabets, numbers, and special characters, PassCraft ensures every password is unique, unpredictable, and meets the latest security standards. Whether you're setting up passwords for social media, banking, or work-related accounts, our tool makes it easy to stay safe online. Generate your password now — no sign-up needed, 100% free, and mobile-friendly!</h3>
-            </p>
-        </div>
-        <div id="workspace">
-            <div id="result"><button id="copyBtn" onclick="copyPassword()" style="display: none;">Copy Password</button></div>
-            <div id="notification" style="margin-top: 10px;"></div>
-            <div id="strength"></div>
-            <label class="option"><input type="checkbox" id="alphabets" checked> Alphabets</label>
-<label class="option"><input type="checkbox" id="numbers"> Numbers</label>
-<label class="option"><input type="checkbox" id="symbols"> Symbols</label>
+                <p>
+                <h1>Generate a Strong, Secure <br> password Instantly with passcraft</h1>
+                </p>
+                <p>
+                <h3>Looking for a fast and reliable way to create secure passwords? PassCraft’s Online Password
+                    Generator helps you generate strong, random passwords instantly — designed to protect your online
+                    accounts from hackers and cyber threats. With customizable options including alphabets, numbers, and
+                    special characters, PassCraft ensures every password is unique, unpredictable, and meets the latest
+                    security standards. Whether you're setting up passwords for social media, banking, or work-related
+                    accounts, our tool makes it easy to stay safe online. Generate your password now — no sign-up
+                    needed, 100% free, and mobile-friendly!</h3>
+                </p>
+            </div>
+            <div id="workspace">
+                <div id="result"><button id="copyBtn" onclick="copyPassword()" style="display: none;">Copy
+                        Password</button></div>
+                <div id="notification" style="margin-top: 10px;"></div>
+                <div id="strength"></div>
+                <label class="option"><input type="checkbox" id="alphabets" checked> Alphabets</label>
+                <label class="option"><input type="checkbox" id="numbers"> Numbers</label>
+                <label class="option"><input type="checkbox" id="symbols"> Symbols</label>
 
-            <br>
-            <div id='slider'><input type="range" id="lengthSlider" min="4" max="64" value="12">
-            <span id="lengthValue">12</span>
+                <br>
+                <div id='slider'><input type="range" id="lengthSlider" min="4" max="64" value="12">
+                    <span id="lengthValue">12</span>
+                </div>
+                <br>
+                <div id="generate-btn"><button onclick="generatePassword()" id="generate">Generate</button></div>
+
+            </div>
         </div>
-            <br>
-            <div id="generate-btn"><button onclick="generatePassword()" id="generate">Generate</button></div>
-            
+        <div class="faq-container">
+    <h2>Frequently Asked Questions (FAQ)</h2>
+
+    <div class="faq-item">
+        <div class="faq-question">What is PassCraft?
+            <span class="faq-toggle-icon">+</span>
         </div>
+        <div class="faq-answer">PassCraft is a free online password generator that helps you create strong, secure, and random passwords instantly to protect your accounts.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Is PassCraft safe to use?
+            <span class="faq-toggle-icon">+</span>
         </div>
-        
+        <div class="faq-answer">Yes, it runs entirely in your browser. No data is sent or stored anywhere — your privacy is fully protected.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">How are the passwords generated?
+            <span class="faq-toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">We use a mix of alphabets, numbers, and special characters based on your selected options, ensuring strong randomness.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Can I customize password length and characters?
+            <span class="faq-toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">Yes, you can choose the length and whether to include alphabets, numbers, and symbols while generating passwords.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Are these passwords safe for banking accounts?
+            <span class="faq-toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">Yes. We recommend passwords with at least 12–16 characters using all character types for better protection.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Do I need to sign up?
+            <span class="faq-toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">No sign-up needed. PassCraft is completely free to use without any registration.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Is PassCraft mobile-friendly?
+            <span class="faq-toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">Yes. It works perfectly on desktops, tablets, and smartphones.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Can I copy the generated password?
+            <span class="faq-toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">Yes, just click the "Copy Password" button to instantly copy it to your clipboard.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Does PassCraft show password strength?
+            <span class="faq-toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">Yes, after generating a password, it displays the strength as Weak, Medium, or Strong based on its length and complexity.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Who can use PassCraft?
+            <span class="faq-toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">Anyone who wants to keep their accounts secure — students, professionals, developers, and more.</div>
+    </div>
+</div>
     </div>
     <footer>
-        <div class="aboutus">
-            <h2>About Us</h2>
-        </div>
-        <div class="line"></div>
-        <div class="contact">
-            <h2>Contact Us</h2>
-            <div class="nishit">
-                <h3>Nishit Parikh</h3>
-            </div>
-            <div class="darshika">
-                <h3>Darshika Singh</h3>
-            </div>
-        </div>
-    </footer>
+  <div class="aboutus">
+    <h3>About Us</h3>
+    <p>Info here...</p>
+  </div>
+  
+  <div class="line"></div>
+
+  <div class="contact">
+    <h3>Contact Us</h3>
+    <p>Nishit Parikh</p>
+    <p>Darshika Singh</p>
+  </div>
+</footer>
     <script src="script.js"></script>
 </body>
 
