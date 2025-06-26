@@ -254,3 +254,37 @@ h3 {
     padding: 8px 16px;
   }
 }
+
+footer{
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutus{
+    height: auto;
+    width: 49vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.line{
+    height: auto;
+    width: 1px;
+    background-color: white;
+    border-color: white;
+}
+
+.contact{
+    height: auto;
+    width: 49vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.nishit{
+    display: flex;
+}
